@@ -12,7 +12,7 @@ LABEL org.opencontainers.image.source="https://github.com/Containerpak/minecraft
 COPY --from=source /out /opt/minecraft-launcher
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends ca-certificates libnss3 xdg-utils && \
+    apt-get install -y --no-install-recommends ca-certificates libcurl4t64 libnss3 libsecret-1-0 libxss1 x11-xserver-utils xdg-utils && \
     ln -sf /opt/minecraft-launcher/minecraft-launcher /usr/bin/minecraft-launcher && \
     cpak-clean-junk
 

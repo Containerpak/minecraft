@@ -41,7 +41,10 @@
     "hostApplications": false,
     "hostActions": [],
     "filesystem": [],
-    "env": [],
+    "env": [
+      "LC_ALL=C",
+      "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt"
+    ],
     "network": true,
     "process": false,
     "userNamespaces": true,
