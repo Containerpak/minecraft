@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Minecraft
+Comment=Install and play Minecraft: Java Edition.
+Exec=minecraft-launcher
+Icon=minecraft
+Terminal=false
+Categories=Game;
