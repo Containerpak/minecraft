@@ -3,8 +3,18 @@
   "manifest_version": "2.0",
   "name": "Minecraft",
   "description": "Install and play Minecraft: Java Edition.",
-  "version": "1.0.1221",
+  "version": "2.1.3",
   "image": "ghcr.io/containerpak/minecraft:main",
+  "runtime_sources": [
+    {
+      "name": "Minecraft.deb",
+      "url": "https://launcher.mojang.com/download/Minecraft.deb",
+      "sha256": "de839e5221b215b2c9d39ec9d9dcac9b143ed43e994e1160a31f7f81c91be9ee",
+      "size": 825844,
+      "installer": "deb-extract",
+      "architecture": "amd64"
+    }
+  ],
   "binaries": [
     "/usr/bin/minecraft-launcher"
   ],

@@ -50,7 +50,7 @@ jobs:
           provenance: mode=max
           sbom: true
       - name: Verify package
-        run: docker run --rm ghcr.io/containerpak/minecraft:main sh -c 'test -x /usr/bin/minecraft-launcher && test -f /usr/share/applications/minecraft.desktop'
+        run: docker run --rm ghcr.io/containerpak/minecraft:main sh -c 'test ! -e /usr/bin/minecraft-launcher && test -f /usr/share/applications/minecraft.desktop'
       - name: Publish summary
         run: echo "ghcr.io/containerpak/minecraft@${{ steps.build.outputs.digest }}" >> "$GITHUB_STEP_SUMMARY"
 
