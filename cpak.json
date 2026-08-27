@@ -4,7 +4,7 @@
   "name": "Minecraft",
   "description": "Install and play Minecraft: Java Edition.",
   "version": "2.1.3",
-  "image": "ghcr.io/containerpak/minecraft@sha256:e67e591778ad0eeaa319e2673a9138e2608258f278389d945716777c1ea0614b",
+  "image": "ghcr.io/containerpak/minecraft@sha256:6aaf18b47b85f800e2ca00e479a714d83a373efa5d27773c58d72641dc388788",
   "runtime_sources": [
     {
       "name": "Minecraft.deb",
